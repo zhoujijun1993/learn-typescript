@@ -1,4 +1,3 @@
-import { AxiosError } from '../../src/helpers/error'
 import axios, { AxiosError } from '../../src/index'
 
 axios({
