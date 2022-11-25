@@ -1,4 +1,4 @@
-import { ResolvedFn, RejectedFn } from "../types"
+import { ResolvedFn, RejectedFn } from '../types'
 
 interface Interceptor<T> {
   resolved: ResolvedFn<T>
@@ -20,7 +20,7 @@ export default class InterceptorManager<T> {
     return this.interceptors.length - 1
   }
 
-  forEach(fn:(Interceptor: Interceptor<T>) => void): void {
+  forEach(fn: (interceptor: Interceptor<T>) => void): void {
     this.interceptors.forEach(interceptor => {
       if (interceptor !== null) {
         fn(interceptor)
