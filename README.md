@@ -1,2 +1,2 @@
-# ts-axios
-使用typescript 实现 axios
+# learn-typescript
+学习typescript语法
